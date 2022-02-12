@@ -1,20 +1,6 @@
 /* font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-/*
-#FFFFFF
-#212121
-#FFFFFF
-#757575 
-#2196F3
-#EEEEEE
-#000000
-#F5F4FA
-#FFFFFF
-#2F303A
-#ECECEC
-*/
-
 :root {
   /* Основной шрифт */
   --main-font: "Roboto", sans-serif;
@@ -34,22 +20,23 @@ font-family: 'Roboto', sans-serif; */
   --main-bg: #e5e5e5;
   --white-bg: #ffffff;
   --grey-bg: #f5f4fa;
+
   /* Тёмная тема фона */
   --black-bg: #2f303a;
-  --button-bg: #2128f3;
   --button-bg-link: #ffffff;
   --button-bg-link-blue: #2196f3;
 }
 
+/* Основной стиль документа */
 body {
   font-family: var(--main-font);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--dark-main-txt-cl);
 }
 
+/* Ссылки */
 .list {
   list-style: none;
 }
@@ -58,6 +45,13 @@ body {
   font-style: normal;
 }
 
+/* Изменение курсора - стрелка на руку */
+.link,
+.btn {
+  cursor: pointer;
+}
+
+/* Логотип */
 .logo {
   font-family: var(--secondary-font);
   font-weight: 900;
@@ -67,6 +61,7 @@ body {
   color: var(--dark-secondary-txt-cl);
 }
 
+/* Ссылки в шапке */
 .header-link {
   font-family: var(--main-font);
   font-weight: 500;
@@ -76,6 +71,7 @@ body {
   color: var(--dark-secondary-txt-cl);
 }
 
+/* Ссылки контактов в шапке */
 .header-contacts-mail,
 .header-contacts-phone {
   font-family: var(--main-font);
@@ -85,8 +81,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--dark-main-txt-cl);
 }
-/* rules for links */
 
+/* Интерактивные элементы */
 .logo:hover,
 .logo:focus {
   color: var(--link-txt-cl);
@@ -113,6 +109,7 @@ body {
   background-color: var(--button-bg-link);
 }
 
+/* Заголовок героя */
 .hero-title {
   font-family: var(--main-font);
   font-weight: 900;
@@ -124,14 +121,17 @@ body {
   color: var(--white-txt-cl);
 }
 
+/* Фон героя - чёрный */
 .hero-main {
   background-color: var(--black-bg);
 }
 
+/* Фон команды - серый */
 .team {
   background-color: var(--grey-bg);
 }
 
+/* Основня кнопка */
 .hero-button {
   font-family: var(--main-font);
   font-weight: 900;
@@ -143,19 +143,19 @@ body {
   letter-spacing: 0.06em;
   color: var(--white-txt-cl);
   background-color: var(--button-bg-link-blue);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
+/* Описание приоритетов */
 .priority {
   font-family: var(--main-font);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--dark-main-txt-cl);
 }
 
+/* Заголовок приоритетов */
 .priority-title {
   font-family: var(--main-font);
   font-weight: 700;
@@ -166,6 +166,7 @@ body {
   color: var(--dark-secondary-txt-cl);
 }
 
+/* Заголовок Чем мы занимаемся */
 .jobs-title {
   font-family: var(--main-font);
   font-weight: 700;
@@ -176,6 +177,7 @@ body {
   color: var(--dark-secondary-txt-cl);
 }
 
+/* Заголовок Наша команда */
 .team-title {
   font-family: var(--main-font);
   font-weight: 700;
@@ -186,6 +188,7 @@ body {
   color: var(--dark-secondary-txt-cl);
 }
 
+/* Имена членов команды */
 .person-name {
   font-family: var(--main-font);
   font-weight: 500;
@@ -195,21 +198,23 @@ body {
   color: var(--dark-secondary-txt-cl);
 }
 
+/* Должность членов команды */
 .person-rank {
   font-family: var(--main-font);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--dark-main-txt-cl);
 }
 
+/* Активные кнопки */
 .button-item:hover,
 .button-item:focus {
   color: var(--white-txt-cl);
   background-color: var(--button-bg-link-blue);
 }
 
+/* Текст и фон кнопок */
 .button-item {
   font-family: var(--main-font);
   font-weight: 500;
@@ -224,6 +229,7 @@ body {
   border-radius: 4px;
 }
 
+/* Название проектов */
 .project-name {
   font-family: var(--main-font);
   font-weight: 700;
@@ -233,44 +239,40 @@ body {
   color: var(--dark-secondary-txt-cl);
 }
 
+/* Описание проектов */
 .project-description {
   font-family: var(--main-font);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--dark-main-txt-cl);
 }
 
+/* Фон футера чёрный */
 .footer {
   background-color: var(--black-bg);
 }
+
+/* Текст логотипа в футере белый */
 .footer-logo {
   color: var(--white-txt-cl);
 }
+
+/* Текст контактов в футере белый */
 .footer-contacts-map,
 .footer-contacts-mail,
 .footer-contacts-phone {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--white-txt-cl);
 }
 
-.footer-contacts-map:hover,
-.footer-contacts-map:focus {
-  color: var(--link-txt-cl);
-}
-
-.footer-contacts-mail:hover,
-.footer-contacts-mail:focus {
-  color: var(--link-txt-cl);
-}
-
-.footer-contacts-phone:hover,
-.footer-contacts-phone:focus {
+/* Текст контактов в футере белый */
+.ftrcont:hover,
+.ftrcont:focus {
   color: var(--link-txt-cl);
 }
