@@ -1,0 +1,276 @@
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/*
+#FFFFFF
+#212121
+#FFFFFF
+#757575 
+#2196F3
+#EEEEEE
+#000000
+#F5F4FA
+#FFFFFF
+#2F303A
+#ECECEC
+*/
+
+:root {
+  /* Основной шрифт */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /* Светлая тема текста */
+  --white-txt-cl: #ffffff;
+
+  /* Тёмная тема текста */
+  --dark-main-txt-cl: #757575;
+  --dark-secondary-txt-cl: #212121;
+  --logo-txt-cl: #2196f3;
+  --link-txt-cl: #2196f3;
+  --button-txt-link: #2196f3;
+
+  /* Светлая тема фона */
+  --main-bg: #e5e5e5;
+  --white-bg: #ffffff;
+  --grey-bg: #f5f4fa;
+  /* Тёмная тема фона */
+  --black-bg: #2f303a;
+  --button-bg: #2128f3;
+  --button-bg-link: #ffffff;
+  --button-bg-link-blue: #2196f3;
+}
+
+body {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--dark-main-txt-cl);
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--dark-secondary-txt-cl);
+}
+
+.header-link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--dark-secondary-txt-cl);
+}
+
+.header-contacts-mail,
+.header-contacts-phone {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  color: var(--dark-main-txt-cl);
+}
+/* rules for links */
+
+.logo:hover,
+.logo:focus {
+  color: var(--link-txt-cl);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--link-txt-cl);
+}
+
+.header-contacts-mail:hover,
+.header-contacts-mail:focus {
+  color: var(--link-txt-cl);
+}
+
+.header-contacts-phone:hover,
+.header-contacts-phone:focus {
+  color: var(--link-txt-cl);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--button-txt-link);
+  background-color: var(--button-bg-link);
+}
+
+.hero-title {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
+}
+
+.hero-main {
+  background-color: var(--black-bg);
+}
+
+.team {
+  background-color: var(--grey-bg);
+}
+
+.hero-button {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-txt-cl);
+  background-color: var(--button-bg);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.priority {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--dark-main-txt-cl);
+}
+
+.priority-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dark-secondary-txt-cl);
+}
+
+.jobs-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-secondary-txt-cl);
+}
+
+.team-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-secondary-txt-cl);
+}
+
+.person-name {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--dark-secondary-txt-cl);
+}
+
+.person-rank {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--dark-main-txt-cl);
+}
+
+.button-item:hover,
+.button-item:focus {
+  color: var(--white-txt-cl);
+  background-color: var(--button-bg-link-blue);
+}
+
+.button-item {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-secondary-txt-cl);
+  background-color: var(--grey-bg);
+  border-radius: 4px;
+}
+
+.project-name {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--dark-secondary-txt-cl);
+}
+
+.project-description {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--dark-main-txt-cl);
+}
+
+.footer {
+  background-color: var(--black-bg);
+}
+.footer-logo {
+  color: var(--white-txt-cl);
+}
+.footer-contacts-map,
+.footer-contacts-mail,
+.footer-contacts-phone {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts-map:hover,
+.footer-contacts-map:focus {
+  color: var(--link-txt-cl);
+}
+
+.footer-contacts-mail:hover,
+.footer-contacts-mail:focus {
+  color: var(--link-txt-cl);
+}
+
+.footer-contacts-phone:hover,
+.footer-contacts-phone:focus {
+  color: var(--link-txt-cl);
+}
