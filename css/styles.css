@@ -91,11 +91,12 @@ body {
   color: var(--dark-main-txt-cl);
 }
 
-/* Интерактивные элементы */
+/* Интерактивные элементы 
 .logo:hover,
 .logo:focus {
   color: var(--link-txt-cl);
 }
+*/
 
 .header-link:hover,
 .header-link:focus {
