@@ -16,6 +16,10 @@ font-family: 'Roboto', sans-serif; */
   --link-txt-cl: #2196f3;
   --button-txt-link: #2196f3;
 
+  /* Серая тема текста в футере - белая с прозрвчностью */
+
+  --contact-txt-footer: rgba(255, 255, 255, 0.6);
+
   /* Светлая тема фона */
   --main-bg: #e5e5e5;
   --white-bg: #ffffff;
@@ -59,6 +63,11 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--dark-secondary-txt-cl);
+}
+
+/* Web span*/
+.web {
+  color: var(--logo-txt-cl);
 }
 
 /* Ссылки в шапке */
@@ -110,7 +119,8 @@ body {
 }
 
 /* Заголовок героя */
-.hero-title {
+.hero-title,
+.portfolio-title {
   font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
@@ -269,6 +279,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-txt-cl);
+}
+
+/* Текст контактов в футере белый */
+.footer-contacts-mail,
+.footer-contacts-phone {
+  color: var(--contact-txt-footer);
 }
 
 /* Текст контактов в футере белый */
